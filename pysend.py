@@ -40,12 +40,12 @@ msg = "From: {0}@gmail.com\nTo: {1}\nSubject: {2}\nDate: {3}\n\n{4}".format( gma
 i = 0
 while i < count:
 	
-	mailServer = smtplib.SMTP("smtp.gmail.com", 587)
-	mailServer.ehlo()
-	mailServer.starttls()
-	mailServer.ehlo()
-	mailServer.login(gmail_user, gmail_pwd)
-	mailServer.sendmail(gmail_user, to, msg)
-	mailServer.close()
+	mail = smtplib.SMTP("smtp.gmail.com", 587)
+	mail.ehlo()
+	mail.starttls()
+	mail.ehlo()
+	mail.login(gmail_user, gmail_pwd)
+	mail.sendmail(gmail_user, to, msg)
+	mail.close()
 	
 	i+=1
