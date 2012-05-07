@@ -4,6 +4,8 @@ pymail
 This is a simple program to prank your friends.
 Just input your gmail username and password, the destination email, subject, text and the amount of mails you want to send.
 
+You can run the programm by typing 'python3 guess.py' into the command line.
+
 
 DISCLAIMER
 ###############################################################
